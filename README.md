@@ -11,3 +11,5 @@ For more information contact kangarooie.
 Code will be posted but shall remain in encrypted form.
 
 A special decompiler will be provided at request.
+
+Nimbon
