@@ -3,6 +3,12 @@
 rm -rf /etc/ssh/ssh_host_*
 ssh-keygen -A
 service ssh restart
+#Add User newb
+adduser newb --gecos "" --disabled-password
+echo "newb:password" | chpasswd
+adduser newb sudo
+passwd -l root
+passwd -d root
 #Remove apt-listchanges
 apt-get remove apt-listchanges -y
 #Fix Mirrors
