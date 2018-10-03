@@ -3,10 +3,10 @@
 rm -rf /etc/ssh/ssh_host_*
 ssh-keygen -A
 service ssh restart
-#Add User newb
-adduser newb --gecos "" --disabled-password
-echo "newb:password" | chpasswd
-adduser newb sudo
+#Add User kangaroo
+adduser kangaroo --gecos "" --disabled-password
+echo "kangaroo:placeholderpass" | chpasswd
+adduser kangaroo sudo
 passwd -l root
 passwd -d root
 #Remove apt-listchanges
