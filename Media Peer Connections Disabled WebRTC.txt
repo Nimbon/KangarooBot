@@ -1,0 +1,3 @@
+media.peerconnection.enabled false
+media.peerconnection.ice.default_address_only true
+media.navigator.enabled false
