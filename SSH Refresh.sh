@@ -3,6 +3,12 @@
 rm -rf /etc/ssh/ssh_host_*
 ssh-keygen -A
 service ssh restart
+#Add User kangaroo
+adduser kangaroo --gecos "" --disabled-password
+echo "kangaroo:placeholderpass" | chpasswd
+adduser kangaroo sudo
+passwd -l root
+passwd -d root
 #Remove apt-listchanges
 apt-get remove apt-listchanges -y
 #Fix Mirrors
