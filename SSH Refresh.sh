@@ -7,12 +7,12 @@ service ssh restart
 apt-get remove apt-listchanges -y
 #Fix Mirrors
 cat > /etc/apt/sources.list << SOURCES
-deb http://http.debian.net/debian jessie main contrib non-free
-deb-src http://http.debian.net/debian jessie main contrib non-free
-deb http://security.debian.org/ jessie/updates main contrib non-free
-deb-src http://security.debian.org/ jessie/updates main contrib non-free
-deb http://http.debian.net/debian jessie-updates main contrib non-free
-deb-src http://http.debian.net/debian jessie-updates main contrib non-free
+deb http://http.debian.net/debian stretch main contrib non-free
+deb-src http://http.debian.net/debian stretch main contrib non-free
+deb http://security.debian.org/ stretch/updates main contrib non-free
+deb-src http://security.debian.org/ stretch/updates main contrib non-free
+deb http://http.debian.net/debian stretch-updates main contrib non-free
+deb-src http://http.debian.net/debian stretch-updates main contrib non-free
 SOURCES
 #Update System First
 apt-get update && apt-get dist-upgrade -y
