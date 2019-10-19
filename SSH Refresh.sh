@@ -32,4 +32,4 @@ swapon /swapfile
 echo "/swapfile          none            swap    defaults        0 0" >> /etc/fstab
 #Install Basic GUI and tools
 apt-get install lxde-core -y
-apt-get install tightvncserver firefox-esr aria2 unifont unrar unzip putty p7zip vnstat cpulimit par2 -y
+apt-get install tightvncserver firefox-esr aria2 unifont unrar unzip putty p7zip vnstat cpulimit par2 wget -y
