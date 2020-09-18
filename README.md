@@ -8,4 +8,4 @@ FAO is an autonomous system based on T-API.
 
 Code will be posted but shall remain in encrypted form.
 
-A special decompiler will be provided at request.
+A special decompiler will be provided at request from Nim.
