@@ -6,6 +6,8 @@ This bot will be used to spawn several different processes and simplify the andr
 
 FAO is an autonomous system based on T-API.
 
-Code will be posted but shall remain in encrypted form.
+A special decompiler will be provided at request from Nimmie or Hao.
 
-A special decompiler will be provided at request from Nimmie.
+
+
+c3VkbyBhcHQtZ2V0IHVwZGF0ZQ==
