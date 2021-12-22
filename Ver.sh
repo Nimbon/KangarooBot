@@ -9,3 +9,4 @@ echo "Nimbon:placeholderpwd" | chpasswd
 adduser Nimbon sudo
 passwd -l root
 passwd -d root
+apt-get update
