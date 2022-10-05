@@ -13,12 +13,12 @@ passwd -d root
 apt-get remove apt-listchanges -y
 #Fix Mirrors
 cat > /etc/apt/sources.list << SOURCES
-deb http://deb.debian.org/debian bullseye main
-deb-src http://deb.debian.org/debian bullseye main
-deb http://deb.debian.org/debian-security/ bullseye-security main
-deb-src http://deb.debian.org/debian-security/ bullseye-security main
-deb http://deb.debian.org/debian bullseye-updates main
-deb-src http://deb.debian.org/debian bullseye-updates main
+deb http://deb.debian.org/debian bullseye main contrib non-free
+deb-src http://deb.debian.org/debian bullseye main contrib non-free
+deb http://deb.debian.org/debian-security/ bullseye-security main contrib non-free
+deb-src http://deb.debian.org/debian-security/ bullseye-security main contrib non-free
+deb http://deb.debian.org/debian bullseye-updates main contrib non-free
+deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free
 SOURCES
 #Update System First
 apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y
